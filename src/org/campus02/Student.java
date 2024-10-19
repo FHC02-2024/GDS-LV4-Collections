@@ -19,12 +19,12 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return matrNr == student.matrNr && Objects.equals(fullName, student.fullName);
+        return matrNr == student.matrNr;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(matrNr, fullName);
+        return Objects.hashCode(matrNr);
     }
 
     @Override
